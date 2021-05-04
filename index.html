@@ -16,13 +16,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="2020-07-27.jpg" type="image/gif" sizes="16x16">
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
     <title>
       Utkarsh Luthra | Portfolio
     </title>
   </head>
 <!-- ---------------------------------THE HTML PART IS STARTS HERE---------------------------------->
-  <body>
+  <body onload="Loader()">
+
+    <div id="loading">
+      Please Wait while we load the Page...
+    </div>
+
     <header>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -57,30 +62,54 @@
         </ul>
       </nav>
     </header>
+    <script>
+    const Fader = doument.querySelector('.Title');
+    Fader.classList.remove('animation');
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            Fader.target.classList.add('animation')
+            return
+            }
+        Fader.target.classList.remove('animation')
+        });
+    });
+    observer.observe(document.querySelector('.wrapper'))
+    </script>
 
     <div class="main">
-      <img src="130713685_1708563705980135_1558655618980928915_n.jpg" alt="Profile Image" />
-      <h1>Utkarsh Luthra</h1>
-      <h3>Student | Programmer | Graphic Designer</h3>
-      <a href=".\About.html"><button>Know More</button></a><a href=".\Contact.html"><button>Contact Now</button></a>
+      <img class="animation" src="DisplayPicture.jpg" alt="Profile Image" />
+      <div class="wrapper">
+        <div class="Title animation">Utkarsh Luthra</h1>
+      </div>
+      <div class="content">
+        <div class="textSlider animation">
+          <div class="slider">
+            <div class="slider-text-1">Graphic Designer</div>
+            <div class="slider-text-2">Web Developer</div>
+            <div class="slider-text-3">Student (HS)</div>
+          </div>
+        </div>
+
+      </div>
+      <a href=".\About.html"><button class=animation>Know More</button></a><a href=".\Contact.html"><button class="animation">Contact Now</button></a>
     </div>
     <div class="contact">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#04284d"
           fill-opacity="1"
           d="M0,224L80,208C160,192,320,160,480,160C640,160,800,192,960,176C1120,160,1280,96,1360,64L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
         ></path>
       </svg>
-      <h1 class="welcome">WELCOME</h1>
-      <h2 class="tomyportfolio">to my portfolio</h2>
-      <p>
-        See the various projects that I worked on along. Check out the skills
-        that I have aquired and read the blogs written by me by clicking on the
-        buttons below
+      <h1 class="welcome animation" >WELCOME</h1>
+      <h2 class="tomyportfolio animation">to my portfolio</h2>
+      <p class="animation">
+        Feel free to explore around and check out all the articles I have written... Or the code and design projects I have worked on.
       </p>
-      <a href="https://www.github.com/UtkarshLuthra"><button>See Projects</button></a>
-      <a href="https://utkarshluthra.medium.com"><button>See Articles</button></a>
+      <a href="https://www.github.com/UtkarshLuthra"><button class="animation">See Projects</button></a>
+      <a href="https://utkarshluthra.medium.com"><button class="animation">See Articles</button></a>
     </div>
 
     <footer>
@@ -92,7 +121,7 @@
       ><a href="https:\\www.twitter.com\LuthraUtkarsh" class="fa fa-twitter"></a
       >
       
-      <a href="mailto:utkarshluthra@gmail.com" class="fa fa-google"></a>
+      <a href="mailto:utkarshluthra@gmail.com?subject=Mailing%20from%20%20Website%20Redirect&body=Enter Anything Here" class="fa fa-google"></a>
       <a href="https:\\www.github.com\UtkarshLuthra" class="fa fa-github"></a>
       <a href="https:\\www.linkedin.com\in\UtkarshLuthra" class="fa fa-linkedin"></a>
       <div>Copyright 2020-21</div>
@@ -121,5 +150,29 @@
 
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
+
+<!-- Pre-loader -->
+<script>
+  var preloader = document.getElementById('loading');
+  function Loader(){
+    preloader.style.display = 'none';
+  }
+</script>
+
+<!-- Scroll Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  $(window).scroll(function(){
+    $(".FadeInOutAnimation").css("opacity", 1-$(window.scrollTop()/250));
+  })
+</script>
+<script>
+  var fade = document.getElementsByClassName('FadeInOutAnimation');
+  function Fader(){
+    fade.style.opacity='0.5';
+  }
+</script>
+<script src="animation.js"></script>
   </body>
 </html>
