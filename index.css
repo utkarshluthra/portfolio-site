@@ -15,7 +15,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: #0099ff, url('circle-loader.gif), no-repeat, center;
+    background: #0099ff url('circle-loader.gif') no-repeat center;
     background-image: cover;
     background-size: 200px, 200px;
     z-index: 99999;
