@@ -1,4 +1,4 @@
-#Personal Portfolio site
+# Personal Portfolio site
  This repository contains the code for my personal portfolio website.
  The website is a static site which is written in HTML, CSS, JavaScript and further is connected to two dynamic websites, namely, Blogsite and Projects siite. The UI?UX designing of this website is done on Adobe XD and is 100% original.
  
