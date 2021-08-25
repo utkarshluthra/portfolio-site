@@ -239,31 +239,31 @@ hr{
 }
 .webdesign{
     width:85%;
-    background-color: rgb(250, 133, 0);
+    background-color: rgb(187, 187, 187);
     animation: progresser 2000ms ease;
 }
 .vector{
     width:88%;
-    background-color: rgba(251, 255, 0, 0.808);
+    background-color: rgb(187, 187, 187);
     animation: progresser 2000ms ease;
 }
 .imgmanip{
     width:45%;
-    background-color: rgb(0, 172, 23);
+    background-color: rgb(187, 187, 187);
     animation: progresser 2000ms ease;
 }
 .vfx{
     width:40%;
-    background-color:rgb(241, 19, 19);
+    background-color: rgb(187, 187, 187);
     animation: progresser 2000ms ease;
 }
 .anim{
     width:50%;
-    background-color: rgb(228, 24, 194);
+    background-color: rgb(187, 187, 187);
     animation: progresser 2000ms ease;
 }
 .datavisualisation{
     width:85%;
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(187, 187, 187);
     animation: progresser 2000ms ease;
 }
