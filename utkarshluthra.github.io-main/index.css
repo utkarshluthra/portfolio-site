@@ -306,7 +306,10 @@ line-height: 4rem;
     71%{margin-top:0px;}
     100%{margin-top:0px;}
 }
-
+.ChandigarhUniversity{
+    font-size: small;
+    text-align: right;
+}
 .main button {
 display: flexbox;
 line-height:1rem;
@@ -332,7 +335,7 @@ opacity: 0.5;
 background: white;
 display: flexbox;
 min-height: 60vh;
-padding-bottom: 2vh;
+padding-bottom: 10vh;
 text-align: center;
 background: url("BackgroundHome.png"), white;
 }
@@ -351,7 +354,7 @@ font-family: "Bebas Neue", cursive;
 font-size: 1rem;
 padding-left: 20vw;
 padding-right: 20vw;
-line-height: 1rem;
+line-height: 2rem;
 }
 .contact button {
 

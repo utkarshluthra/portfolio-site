@@ -88,10 +88,11 @@
             <p>
             You can go through with my entire coding journey by clicking <a href="https://github.com/utkarshluthra">here</a> and download my resume from the link below😄.</p>
         <div class="dwnld animation">
-        <a href=".\Utkarsh Luthra Resume.pdf" download><button class="downldBtn">Download Resume</button></a></center>
+        <a href=".\Utkarsh Luthra.pdf" download><button class="downldBtn">Download Resume</button></a></center>
         <a name="programming"></a></div>
 </div>
         <div class="container Skills">
+            <a name="Skills"></a>
             <h1>Technical Skills</h1>
             
 
@@ -122,7 +123,7 @@
                 <div class="skill1">Image Manipulation<div class="line base"><span class="line imgmanip"></span></div></div>
                 <div class="skill1">VFX and video Editing<div class="line base"><span class="line vfx"></span></div></div>
                 <div class="skill1">Data Visualisation<div class="line base"><span class="line datavisualisation"></span></div></div>
-            </div>Self reported*
+            </div>
         </div>
         
 </div>
@@ -162,6 +163,27 @@
               preloader.style.display = 'none';
             }
           </script>
+
+
+    <script>
+        
+        const square = document.querySelector('.skill1');
+        square.classList.remove('progresser');
+
+        
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            square.classList.add('progresser');
+            return;
+            }
+
+            square.classList.remove('progresser');
+        });
+        });
+
+        observer.observe(document.querySelector('.Skills'));
+    </script>
 
 </body>
 
