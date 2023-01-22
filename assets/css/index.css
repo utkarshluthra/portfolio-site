@@ -18,7 +18,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: #000 url('circle-loader.gif') no-repeat center;
+    background: #365B6D url('807.gif') no-repeat center;
     background-image: cover;
     background-size: 200px, 200px;
     z-index: 99999;
@@ -334,7 +334,7 @@ display: flexbox;
 min-height: 60vh;
 padding-bottom: 10vh;
 text-align: center;
-background: url("BackgroundHome.png"), white;
+background: url("unnamed.png"), white;
 }
 
 .welcome {
