@@ -11,7 +11,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: --primaryColor
+    background: var(--primaryColor)
     url('../media/monophy.gif')
         no-repeat
         center;
