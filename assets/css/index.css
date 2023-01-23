@@ -1,12 +1,17 @@
+:root{
+    --primaryColor: #365B6d;
+    --white: #f7f7f7;
+    --secondaryColor: #41C1BA
+}
 *{
     margin:0;
-    padding:0;
+    padding:0;    
 }
 #loading{
     position: fixed;
     height: 100%;
     width: 100%;
-    background: #0099ff
+    background: --primaryColor
     url('../media/monophy.gif')
         no-repeat
         center;
@@ -18,7 +23,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: #365B6D url('../media/807.gif') no-repeat center;
+    background: --primaryColor url('../media/807.gif') no-repeat center;
     background-image: cover;
     background-size: 200px, 200px;
     z-index: 99999;
@@ -27,12 +32,12 @@
 --ff-primary: "Poppins", sans-serif;
 --fw-bold: 900;
 --clr-light: #fff;
---clr-dark: #303030;
---clr-accent: #16e0bd;
+--clr-dark: #365B6D;
+--clr-accent: #41c1da;
 --fs-h2: 2.25rem;
 --fs-body: 1rem;
 --speed: 180px;
---main-bg-color: #04284d;
+--main-bg-color: #365B6D;
 }
 
 @media (min-width: 800px) {
@@ -52,7 +57,15 @@ line-height: 1.5vh;
 /* width: 100%; */
 user-select: none;
 }
-
+.text-2 {
+    list-style: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: var(--ff-primary);
+  }
 .nav {
 display: flex;
 justify-content: center;
@@ -223,9 +236,10 @@ width: 100px;
 border-radius: 50%;
 }
 .Title {
-color: #0099ff;
+color: #f7f7f7;
 font-size: 3rem;
-font-family: "Lobster", cursive;
+font-family: "Poppins", 'Times New Roman', Times, serif;
+font-weight: bold;
 margin: 0px;
 line-height: 4rem;
 
@@ -235,8 +249,9 @@ line-height: 4rem;
     animation-delay: 2s;
 }
 .animation{
-    animation: fade 5s ease;
+    animation: fade 0s ease;
 }
+
 @keyframes fade{
     0%{opacity:0;}
     100%{opacity:1;}
@@ -316,7 +331,7 @@ line-height: 4rem;
     margin-right: 2vw;
     margin-top: 1rem;
     margin-bottom: 5rem;
-    background-color: #16e0bd;
+    background-color: #41c1da;
     font-size: 1rem;
     border: none;
     color: white;
@@ -345,7 +360,7 @@ line-height: 3rem;
 .tomyportfolio {
 font-size: 2rem;
 line-height: 2rem;
-font-family: "Bebas Neue", cursive;
+font-family: "Poppins";
 }
 .contact p {
 font-size: 1rem;
@@ -360,7 +375,7 @@ border-radius: 3vh;
 margin-left: 2vw;
 margin-top: 1rem;
 margin-bottom:2rem;
-background-color: #0099ff;
+background-color: #41c1da;
 font-size: var(--ff-primary);
 border: none;
 color: white;
@@ -384,7 +399,7 @@ color: white;
 footer {
 display: flexbox;
 padding-bottom: 5vh;
-background-color: black;
+background-color: var(--primaryColor);
 text-align: center;
 padding-top: 10vh;
 font-size: small;

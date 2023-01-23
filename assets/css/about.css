@@ -1,11 +1,22 @@
+:root{
+    --medoc: #365B6D;
+}
+body{
+    background-color: #365B6D;
+}
 .container {
     padding: 5vh;
     margin-top: 5vw;
     margin-bottom: 5vw;
     line-height: 1.2;
-    background-color: black;
-    color: #aaa;
-
+    background-color: #f7f7f7;
+    color: #365B6D;
+}
+.container p{
+    color: #3e3e3e;
+}
+.container ol{
+    color: #3e3e3e;
 }
 h3{
     text-align: center;
@@ -16,11 +27,11 @@ h2{
     font-weight: bolder;
 }
 .navbar {
-    background-color:#ff6600;
+    background-color: var(--medoc);
 }
-.nav-item{
-    color: rgb(17, 17, 117);
-    
+.nav-item:link{
+    color:white;
+    background-color: white;
 }
 .nav-item:hover{
     color: white;
@@ -38,7 +49,7 @@ h2{
     border-radius: 3vh;
     /* margin-left: 20vw; */
     margin-top: 1rem;
-    background-color: green;
+    background-color: var(--medoc);
     font-size: var(--ff-primary);
     border: none;
     color: white;
@@ -71,7 +82,7 @@ form {
 }
 .form-control{
     /* width: 600px; */
-    background: rgba(0,0,50,0.5);
+    background: rgba(255, 255, 255, 0.5);
     border: none;
     outline: none;
     border-bottom: 1px solid gray;
@@ -81,12 +92,12 @@ form {
 }
 input {
     height: 45px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 .submit{
     border-radius: 15%;
     padding: 0.5rem 1rem;
-    background: #ff5722;
+    background: var(--medoc);
     border-color: transparent;
     color: #fff;
     font-size: 20px;
@@ -96,19 +107,20 @@ input {
     margin-top: 20px;
 }
 .submit:hover{
-    background-color: #f44336;
+    background-color: var(--medoc);
     cursor: pointer;
 }
 .container-fluid{
     display:flexbox;
     text-align: center;
-    background: linear-gradient(rgba(0,0,50,0.5), rgba(0,0,50,0.5)), url(ContactBackground.png);
+    background: #f7f7f7;
     background-size: cover;
     background-position: center;
+    color: #365B6D;
 }
 hr{
     width: 1px;
-    color: red;
+    color: var(--medoc);
 }
 
 .row{
@@ -117,7 +129,7 @@ hr{
 .column{
     flex: 50%;
     padding: 20px;
-    border-left: 1px solid white;
+    border-left: 1px solid #365B6D;
 }
 .column button{
     display: flexbox;
@@ -131,10 +143,14 @@ hr{
     border-radius: 10%;
     border: none;
     outline: none;
-    background: #ff5722;
+    background: #365B6D;
 }
 .column button:hover{
-    background-color: #f44336;
+    background-color: #41C1BA;
+}
+
+#Name{
+    color: #f7f7f7;
 }
 
 .Skills{
@@ -142,11 +158,12 @@ hr{
     display: flexbox;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.89);
-    color: black;
+    background: #f7f7f7;
+    color: var(--medoc);
     
 }
 .Skills h1{
+    font-size: 10vh;
     text-align: right;
     
 }
@@ -169,7 +186,7 @@ hr{
     display:flex;
     height: 1rem;
     width: 100%;
-    background-color: #04284d;
+    background-color: #f7f7f700;
     border-radius: 50vh;
     margin-left: inherit;
     animation: progresser 1000ms ease;
@@ -182,88 +199,83 @@ hr{
     100%{width:100%}}
 
 
+.organisationalLeadership{
+    width:80%;
+    background-color: var(--medoc);
+    animation: progresser 2000ms ease;
+}
+.graphicDesign{
+    width:56%;
+    background-color: var(--medoc);
+    animation: progresser 2000ms ease;
+}
+.development{
+    width:72%;
+    background-color: var(--medoc);
+    animation: progresser 2000ms ease;
+}
+.marketing{
+    width:69%;
+    background-color: var(--medoc);
+    animation: progresser 2000ms ease;
+}
+.branding{
+    width:63%;
+    background-color: var(--medoc);
+    animation: progresser 2000ms ease;
+}
 .python{
-    width:75%;
-    background-color: rgb(187, 187, 187);
+    width:91%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .cpp{
     width:69%;
-    background-color: rgb(187, 187, 187);
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .js{
-    width:71%;
-    background-color: rgb(187, 187, 187);
+    width:66%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .java{
-    width:43%;
-    background-color: rgb(187, 187, 187);
+    width:91%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .kotlin{
-    width:50%;
-    background-color: rgb(187, 187, 187);
-    animation: progresser 2000ms ease;
-}
-.frontend{
-    width:50%;
-    background-color: rgb(139, 139, 139);
-    animation: progresser 2000ms ease;
-}
-.backend{
-    width:73%;
-    background-color: rgb(139,139,139);
-    animation: progresser 2000ms ease;
-}
-.android{
-    width:25%;
-    background-color:rgb(139,139,139);
-    animation: progresser 2000ms ease;
-}
-.dbms{
-    width:30%;
-    background-color: rgb(139,139,139);
-    animation: progresser 2000ms ease;
-}
-.networking{
-    width:20%;
-    background-color: rgb(139,139,139);
-    animation: progresser 2000ms ease;
-}
-.dsa{
-    width:25%;
-    background-color: rgb(139,139,139);
+    width:83%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .webdesign{
-    width:85%;
-    background-color: rgb(187, 187, 187);
+    width:77%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .vector{
-    width:88%;
-    background-color: rgb(187, 187, 187);
+    width:57%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .imgmanip{
-    width:45%;
-    background-color: rgb(187, 187, 187);
+    width:47%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .vfx{
-    width:40%;
-    background-color: rgb(187, 187, 187);
+    width:43%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .anim{
-    width:50%;
-    background-color: rgb(187, 187, 187);
+    width:39%;
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
 .datavisualisation{
     width:85%;
-    background-color: rgb(187, 187, 187);
+    background-color: var(--medoc);
     animation: progresser 2000ms ease;
 }
